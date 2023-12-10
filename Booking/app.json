@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "plugins": [[
+      "expo-image-picker",
+      {
+        "photosPermission": "custom photos permission",
+        "cameraPermission": "Allow $(PRODUCT_NAME) to open the camera",
+
+        "//": "Disables the microphone permission",
+        "microphonePermission": false
+      }
+    ]],
+    
+    "name": "Booking",
+    "slug": "Booking",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+      "assets": [
+        {
+          "assetId": null,
+          "base64": null,
+          "duration": null,
+          "exif": null,
+          "fileName": null,
+          "fileSize": 25269,
+          "height": 920,
+          "type": "image",
+          "uri": "file:///var/mobile/Containers/Data/Application/75B54162-A665-4DE6-9E24-65315E408078/Library/Caches/ExponentExperienceData/%2540anonymous%252FBooking-d4095425-45d3-4006-b894-48a57b418fa0/ImagePicker/3643BEE4-D7E2-4E16-BE16-25A95967D409.png",
+          "width": 920
+        }
+      ],
+      "canceled": false,
+      "cancelled": false
+    }
+    
+    
+  }
+  
