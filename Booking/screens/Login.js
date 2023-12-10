@@ -100,8 +100,8 @@ const Login =({ navigation })=>{
   const [password, setPassword] = useState('');
   const handleLogin = async (data) => {
     try {
-      const LoginRespose = await axios.get('http://exp://192.168.0.165:8081/api/clients');
-      const response = await axios.post("http://exp://192.168.0.165:8081/api/clients/login",
+      const LoginRespose = await axios.get('http://192.168.0.165:8080/api/clients');
+      const response = await axios.post("http://192.168.0.165:8080/api/clients/login",
       {
         EmailCl:LoginRespose.data.email,
         PasswordCl:LoginRespose.data.password
