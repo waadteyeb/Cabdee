@@ -180,7 +180,7 @@ const Parametre = ({ navigation }) => {
   const handleUpdate = async (data) => {
     try {
       const response = await axios.put(
-        "http://exp://192.168.0.165:8081/api/client/${ClientID}",{
+        "http://192.168.0.165:8080/api/client/${ClientID}",{
           EmailCL: data.email,
           PhoneCl:data.phonecl,
           BirthDateCl : data.birthdatecl,
