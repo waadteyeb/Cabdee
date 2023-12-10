@@ -166,8 +166,8 @@ const ListChauffeur = ({ navigation }) => {
   const [resultf,setResultf]=useState(null);
 const handelSearch=async(data)=>{
   try{
-    const DriverInformationResponse = await axios.get("http://exp://192.168.0.165:8081/api/driver/id/${chauffeurID}");
-    const FeedBackDriver = await axios.get("http://exp://192.168.0.165:8081/api/feedback/driver/${chauffeurID}",{
+    const DriverInformationResponse = await axios.get("http://192.168.0.165:8080/api/driver/id/${chauffeurID}");
+    const FeedBackDriver = await axios.get("http://192.168.0.165:8080/api/feedback/driver/${chauffeurID}",{
       FeedbackRating : DriverInformationResponse.data.feedback,
     });
         const VoitureChauffeur = await axios.get("http://exp://192.168.0.165:8081/api/carbydrivers/${chauffeurID}",{
