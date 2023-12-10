@@ -110,7 +110,7 @@ const InfCnx = ({ navigation })=>{
   const handleSignup = async (data) => {
     try {
       const response = await axios.post(
-        "http://192.168.0.165:8081/api/client/register",
+        "http://192.168.0.165:8080/api/client/register",
         [
           EmailCL=data.email,
           PhoneCl=data.phonecl,
